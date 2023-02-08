@@ -66,6 +66,12 @@ client.on('messageCreate', (message) => {
     else if(command == 'drops'){
         message.channel.send('https://discord.com/channels/868250826446078042/868981965590765608/1016118890679500820')
     }
+    else if(command == '(power)nap'){
+        message.channel.send('umm.. its either /nap or /powernap.. hehe.')
+    }
+    else if(command == '(blue)flash'){
+        message.channel.send('DOES NOT COMPUTE, do /flash or /blueflash.')
+    }      
     else return
 })
 
