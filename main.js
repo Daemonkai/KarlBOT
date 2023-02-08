@@ -29,10 +29,18 @@ client.on('messageCreate',(message) => {
 })
 
 client.on('messageCreate', (message) => {
+    
+    if (message.mentions.has(client.user.id) && !message.author.bot) {
+        message.channel.send("Hello, sensei instructed me to further assist you with your training, type /help to see what i can do for you");
+    }    
+    
+    
     if(!message.content.startsWith(prefix) || message.author.bot) return
 
     const args = message.content.slice(prefix.length).split(/ +/)
     const command = args.shift().toLowerCase()
+
+      
 
     if(command == 'wiki'){
         message.channel.send('https://dragonfist-limitless.fandom.com/wiki/Dragonfist_Limitless_Wiki')
@@ -76,7 +84,8 @@ client.on('messageCreate', (message) => {
     }
     else if(command == '(blue)flash'){
         message.channel.send('DOES NOT COMPUTE, do /flash or /blueflash.')
-    }      
+    }
+    
     else return
 })
 
