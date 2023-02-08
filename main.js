@@ -13,6 +13,11 @@ const client = new Discord.Client({
     });
 const prefix = '/'
 
+var http = require('http');
+http.createServer(function (req, res) {
+
+}).listen(8080);
+
 client.once('ready', () => {
     console.log('KarlBOT is online')
 })
