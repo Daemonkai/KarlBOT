@@ -30,13 +30,12 @@ client.on('messageCreate',(message) => {
 
 client.on('messageCreate', (message) => {
     
-    if (message.mentions.has(client.user.id) && !message.author.bot) {
+     
+    if (message.mentions.has(client.user.id) && !message.author.bot && !message.content.startsWith(prefix) ) {
         message.channel.send("Hello, sensei instructed me to further assist you with your training, type /help to see what i can do for you");
     }    
+    else if(!message.content.startsWith(prefix) || message.author.bot) return
     
-    
-    if(!message.content.startsWith(prefix) || message.author.bot) return
-
     const args = message.content.slice(prefix.length).split(/ +/)
     const command = args.shift().toLowerCase()
 
