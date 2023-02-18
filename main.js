@@ -42,7 +42,7 @@ client.on('messageCreate', (message) => {
       
 
     if(command == 'wiki'){
-        message.channel.send('https://dragonfist-limitless.fandom.com/wiki/Dragonfist_Limitless_Wiki')
+        message.channel.send('<https://dragonfist-limitless.fandom.com/wiki/Dragonfist_Limitless_Wiki>')
     }
     else if(command == "zenkai"){
         message.channel.send('https://discord.com/channels/868250826446078042/891089693909860363/1021592772970561619')
@@ -60,7 +60,7 @@ client.on('messageCreate', (message) => {
         message.channel.send('https://discord.com/channels/868250826446078042/868981965590765608/1018305373645574165')
     }
     else if(command == 'help'){
-        message.channel.send('List of current commands:\n/wiki\n/zenkai\n/sheet\n/scrolls\n/(power)nap\n/(blue)flash\n/shadowboxing\n/drops'
+        message.channel.send('List of current commands:\n/wiki\n/zenkai\n/sheet\n/scrolls\n/(power)nap\n/(blue)flash\n/shadowboxing\n/drops\n/spg (spg: special power gains)\n/soulorb'
     )
     }
     else if(command == 'blueflash'){
@@ -83,6 +83,12 @@ client.on('messageCreate', (message) => {
     }
     else if(command == '(blue)flash'){
         message.channel.send('DOES NOT COMPUTE, do /flash or /blueflash.')
+    }
+    else if(command == 'spg'){
+        message.channel.send('https://discord.com/channels/868250826446078042/868981965590765608/1076252726947745963')
+    }
+    else if(command == 'soulorb'){
+        message.channel.send('https://discord.com/channels/868250826446078042/868981965590765608/1076644474656137216')
     }
     
     else return
