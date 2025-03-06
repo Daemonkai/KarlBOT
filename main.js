@@ -13,10 +13,16 @@ const client = new Discord.Client({
     });
 const prefix = '/'
 
-var http = require('http');
-http.createServer(function (req, res) {
+const http = require('http');
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('Bot is running\n');
+});
 
-}).listen(8080);
+server.listen(8080, () => {
+    console.log('Server is running on port 8080');
+});
+
 
 client.once('ready', () => {
     console.log('KarlBOT is online')
