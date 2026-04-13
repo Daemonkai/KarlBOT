@@ -97,7 +97,7 @@ client.on('messageCreate', (message) => {
         message.channel.send('https://discord.com/channels/868250826446078042/868981965590765608/1076644474656137216')
     }
 	else if(command == 'email'){
-        message.channel.send('dragonfistlimitless@gmail.com')
+        message.channel.send('raventhe@dragonfistlimitlessgame.com')
     }
     
     else return
