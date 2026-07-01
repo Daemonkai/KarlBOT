@@ -66,7 +66,7 @@ client.on('messageCreate', (message) => {
         message.channel.send('https://discord.com/channels/868250826446078042/868981965590765608/1018305373645574165')
     }
     else if(command == 'help'){
-        message.channel.send('List of current commands:\n/wiki\n/zenkai\n/sheet\n/scrolls\n/(power)nap\n/(blue)flash\n/shadowboxing\n/drops\n/spg (spg: special power gains)\n/soulorb'
+        message.channel.send('List of current commands:\n/wiki\n/zenkai\n/zenkaicalc\n/sheet\n/scrolls\n/(power)nap\n/(blue)flash\n/shadowboxing\n/drops\n/spg (spg: special power gains)\n/soulorb\n/email'
     )
     }
     else if(command == 'blueflash'){
@@ -99,7 +99,9 @@ client.on('messageCreate', (message) => {
 	else if(command == 'email'){
         message.channel.send('raventhe@dragonfistlimitlessgame.com')
     }
-    
+    	else if(command == 'zenkaicalc'){
+        message.channel.send('https://osubama.github.io/Limitless-Zenkai-Calculator/zenkai_calculator.html')
+    }
     else return
 })
 
